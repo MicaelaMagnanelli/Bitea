@@ -28,12 +28,6 @@
             </a>
         </div>
 
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Menú</a></li>
@@ -46,34 +40,42 @@
 
         <!-- VIDEO / HERO -->
         <section id="hero">
-            <video autoplay loop muted playsinline>
+            <video autoplay loop muted playsinline id="video">
                 <source src="Video/Video de Bitea (Sin Marcas).mp4" type="video/mp4">
             </video>
             <a href="caja3.html" class="btn-comprar">Comprar</a>
         </section>
 
         <!-- Sección Nuestros Bites -->
-     <section id="semanas">
+        <section id="semanas">
             <h2 id="flavor-week">Semana del 8 al 30 de Junio</h2>
         </section>
 
-        <div id="nuestros-bites">
-            <h3 id="our-bites" >Nuestra Caja</h3>
-        </div>
-        
-            <section id="productos-seccion">
-            <div class="grid-productos">
-                <article class="tarjeta-producto">
-                    <img src="Assets/Images/Caja_Chica.png" alt="Caja Bitea Chica" width="200">
-                    <h3>Caja 3 Sabores</h3>
-                    <a href="caja3.html" class="boton-enlace">Armar esta caja</a>
+        <section id="productos-seccion">
+            <div class="contenedor-apple-style">
+
+                <article class="info-producto">
+                    <span class="subtitulo-marca">Nuestra Caja</span>
+                    <h2 class="titulo-producto">Caja 3 Sabores</h2>
+                    <p class="descripcion-producto">
+                        Personalizá tu experiencia Bitea seleccionando la combinación perfecta de tus 3 sabores
+                        favoritos. Ideales para mantener tu ritmo diario con un snack saludable, real y lleno de
+                        energía.
+                    </p>
+                    <a href="caja3.html" class="boton-apple">Armar esta caja</a>
                 </article>
+
+                <div class="imagen-producto">
+                    <img src="Imagenes/Cajas/Caja de 3 cupcakes sin fondo.png" alt="Caja Bitea 3 Sabores">
+                </div>
+
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
+    
         <div class="footer-links">
             <a class="footer-link" href="https://www.google.com/maps" target="_blank">
                 <img src="Imagenes/Footer/Locación.png" alt="Ubicación" class="footer-icon">
@@ -83,27 +85,18 @@
                 <img src="Imagenes/Footer/Historia.png" alt="Historia" class="footer-icon">
                 <span>Historia</span>
             </a>
-            <a class="footer-link" href="Contacto.html">
+            <a class="footer-link" href="mailto:mica_magna@hotmail.com">
                 <img src="Imagenes/Footer/Contacto.png" alt="Contacto" class="footer-icon">
                 <span>Contacto</span>
             </a>
         </div>
-        <div class="footer-social">
-            <a class="social-link" href="https://www.instagram.com/" target="_blank">
-                <img src="Imagenes/Footer/Redes/Ig.png" alt="Instagram" class="social-icon">
-            </a>
-            <a class="social-link" href="https://www.tiktok.com/" target="_blank">
-                <img src="Imagenes/Footer/Redes/Tik Tok.png" alt="TikTok" class="social-icon">
-            </a>
-            <a class="social-link" href="https://wa.me/" target="_blank">
-                <img src="Imagenes/Footer/Redes/WhatsApp.png" alt="WhatsApp" class="social-icon">
-            </a>
-        </div>
+    
         <div class="footer-logo">
             <a href="index.html">
                 <img src="Imagenes/Footer/Logo Bitea (Negro) .png" alt="Logo Bitea">
             </a>
         </div>
+    
     </footer>
 
 </body>
