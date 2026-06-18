@@ -200,45 +200,7 @@ header .menu li a:hover {
     text-align: center;
 }
 
-/* ==========================================================================
-   RESPONSIVE (CELULARES Y TABLETS)
-   ========================================================================== */
-@media (max-width: 768px) {
-    .caja-simple {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        gap: 20px;
-    }
 
-    .selection-area {
-        align-items: center;
-        text-align: center;
-    }
-
-    .selection-area .title {
-        font-size: 28px;
-    }
-
-    .descripcion-caja {
-        margin-bottom: 20px;
-    }
-
-    .sabores-grid {
-        grid-template-columns: repeat(2, 1fr); /* En celulares se muestran prolijamente de a dos por fila */
-        gap: 15px;
-        margin-top: 30px;
-        padding-top: 30px;
-    }
-    
-    .product-item {
-        padding: 15px;
-    }
-    
-    .product-item img {
-        max-width: 90px;
-    }
-}
 /* ==========================================================================
    6. FOOTER COHESIVO Y CENTRADO (COMPLETO)
    ========================================================================== */
@@ -318,17 +280,21 @@ header .menu li a:hover {
     display: block;
 }
 
-/* Responsive específico para la sección Apple y Footer en móviles */
-@media (max-width: 768px) {
+/* ==========================================================================
+   7. MEDIA QUERIES (DISEÑO RESPONSIVE ADAPTADO)
+   ========================================================================== */
+
+/* --- TABLETS Y CELULARES (< 1024px) --- */
+@media (max-width: 1024px) {
+    /* Header adaptado sin hamburguesa: Se apila verticalmente prolijo */
     header {
         padding: 15px 20px;
         flex-direction: column;
-        gap: 12px; /* Espacio exacto entre el logo y los dos botones */
+        gap: 12px; /* Espacio exacto entre el logo y los botones */
     }
 
-    /* Ocultamos el truco del espacio fantasma para que no desplace el contenido */
     header::after {
-        display: none;
+        display: none; /* Quitamos el espacio fantasma de escritorio */
     }
 
     header .logo {
@@ -337,25 +303,25 @@ header .menu li a:hover {
     }
 
     .logo-img {
-        height: 40px; /* Un poquito más chico en celular para optimizar espacio */
+        height: 40px; /* Un poco más chico para cuidar el espacio */
     }
 
-    /* Forzamos a que el menú de navegación esté siempre visible y centrado */
     header nav {
-        position: static; /* Anula el posicionamiento absoluto previo */
+        position: static; /* Anula absolutos anteriores */
         width: 100%;
         opacity: 1;
         visibility: visible;
         transform: none;
+        display: flex;
         justify-content: center;
-        background-color: transparent; /* Se integra al fondo azul del header */
+        background-color: transparent;
     }
 
-    /* Las opciones se mantienen una al lado de la otra */
+    /* Las opciones se mantienen fijas una al lado de la otra */
     header .menu {
-        flex-direction: row !important; /* Mantiene la fila horizontal */
+        flex-direction: row !important;
         justify-content: center !important;
-        gap: 25px !important; /* Espaciado cómodo para tocar con el dedo */
+        gap: 25px !important; /* Separación cómoda para cliquear con el dedo */
         padding: 0 !important;
     }
 
@@ -364,10 +330,72 @@ header .menu li a:hover {
         padding: 6px 10px !important;
         text-align: center !important;
     }
+}
+
+/* --- SOLO CELULARES (< 768px) --- */
+@media (max-width: 768px) {
+    /* Página Arma tu caja: Todo en una sola columna centrada */
+    .caja-simple {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .selection-area {
+        align-items: center;
+        text-align: center;
+    }
+
+    .selection-area .title {
+        font-size: 28px;
+    }
+
+    .descripcion-caja {
+        margin-bottom: 20px;
+    }
+
+    /* Grilla de Sabores: Se muestran de a dos por fila de forma impecable */
+    .sabores-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
     
+    .product-item {
+        padding: 15px;
+    }
+    
+    .product-item img {
+        max-width: 90px;
+    }
+
+    /* Sección de Producto Estilo Apple de la Home */
     .contenedor-apple-style {
         grid-template-columns: 1fr;
         padding: 40px 20px;
         gap: 30px;
     }
 
+    .info-producto {
+        padding-right: 0;
+        align-items: center;        
+        text-align: center;
+    }
+
+    .titulo-producto {
+        font-size: 32px;
+    }
+
+    /* Footer adaptado a pantallas chicas */
+    .footer-links {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .social-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
