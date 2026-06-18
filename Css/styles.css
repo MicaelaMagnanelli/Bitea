@@ -7,9 +7,10 @@ body {
 }
 
 /* MENU */
-
+/* HEADER Y NAVEGACIÓN */
 header {
     background-color: #2A5FB1;
+    color: #FFFAF4;
     padding: 20px 40px;
     position: fixed;
     top: 0;
@@ -19,6 +20,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header nav a {
+    color: #FFFAF4;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    color: #FFB86A; /* Cambio de color con Hover */
 }
 
 .logo {
@@ -34,7 +46,6 @@ header {
 /* Estilos para el ícono de hamburguesa  */
 .hamburger {
     display: none;
-   
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -59,58 +70,6 @@ header {
 
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #FFFAF4;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-}
-
-.menu li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 3px;
-    background-color: #FFFAF4;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-}
-
-.menu li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-
-#menu {
-    position: relative;
-    width: 100%;
-    height: 815px;
-    overflow: hidden;
 }
 
 #hero {
