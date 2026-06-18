@@ -18,20 +18,44 @@ header {
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* Quitamos el justify-content: space-between para controlar los espacios a mano */
+}
+
+/* El logo se queda a la izquierda, pero le damos un ancho fijo para balancear el espacio */
+header .logo {
+    flex: 1;
+    display: flex;
     align-items: center;
 }
 
+/* El menú de navegación se expande y centra su contenido de forma absoluta */
+header nav {
+    flex: 2;
+    display: flex;
+    justify-content: center; /* Centra los elementos uno al lado del otro */
+    gap: 30px; /* Deja una separación limpia entre los dos enlaces */
+}
+
+/* Espacio fantasma a la derecha para que el centro sea PERFECTO */
+header::after {
+    content: "";
+    flex: 1;
+}
+
+/* Estilos de los enlaces individuales */
 header nav a {
     color: #FFFAF4;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
     color: #FFB86A; /* Cambio de color con Hover */
 }
+
 
 .logo {
     display: flex;
