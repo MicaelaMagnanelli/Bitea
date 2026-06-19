@@ -1,4 +1,14 @@
 ---
+# Bitea 🧁
+
+## 📌 Descripción del proyecto 
+**Bitea** es una tienda web de repostería especializada en cupcakes artesanales. El proyecto fue desarrollado para la materia Diseño Web con el objetivo de crear una experiencia de compra intuitiva, dinámica y visualmente atractiva. La propuesta permite a los usuarios conocer el proceso de elaboración de los productos y personalizar su propia caja de cupcakes de manera sencilla.
+
+## 🍰 Rubro 
+Repostería artesanal / Venta de cupcakes.
+
+## 🎯 Público objetivo 
+Bitea está dirigido a personas que disfrutan de los postres artesanales, incluyendo usuarios que buscan opciones saludables. El público abarca un rango etario amplio, con especial enfoque en jóvenes adultos interesados en propuestas gastronómicas innovadoras y personalizadas.
 
 ## 🎨 Sistema de Identidad & Guía de Estilos
 
@@ -12,6 +22,8 @@ El diseño visual de Bitea fue desarrollado con el objetivo de equilibrar la cal
 
 ### 2. Tipografía Oficial
 * **Noto Sans Thai Looped:** Tipografía sans-serif de Google Fonts. Sus terminaciones curvas en los lazos tipográficos emulan de manera perfecta el carácter sofisticado, redondo y cuidado de la marca.
+
+## 🗂️ Estructura del sitio
 
 ---
 
